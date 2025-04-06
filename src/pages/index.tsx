@@ -84,10 +84,13 @@ export default function Home() {
     setShowWelcome(false);
 
     try {
-      const res = await axios.post("http://localhost:8000/api/ask/", {
-        question: text,
-        session_id: "frontend-user",
-      });
+      const res = await axios.post(
+        "https://nl2sql-backend-zqrg.onrender.com/api/ask/",
+        {
+          question: text,
+          session_id: "frontend-user",
+        }
+      );
 
       setMessages([
         ...updatedMessages,
