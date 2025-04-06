@@ -34,16 +34,19 @@ export default function Home() {
 
   // Sample suggestions for the welcome screen with categories
   const suggestions = [
-    { text: "Show all users who signed up last week", category: "Users" },
+    { text: "Which city has the most employees?", category: "Employees" },
     {
-      text: "Find products with inventory below 10 units",
-      category: "Inventory",
+      text: "Which customer placed the most orders?",
+      category: "Orders",
     },
     {
       text: "What are the top 5 most ordered products?",
-      category: "Analytics",
+      category: "Orders",
     },
-    { text: "Show transactions over $1000", category: "Transactions" },
+    {
+      text: "Which product has the lowest quantity in stock?",
+      category: "Inventory Health",
+    },
     { text: "List tables in the database", category: "Schema" },
     { text: "Find customers with no orders", category: "Relationships" },
   ];
